@@ -67,9 +67,11 @@
       <div data-role="fieldcontain" class="ui-hide-label">
         <input type="text" name="title" id="title" value="" placeholder="Task Title"/>
       </div>
-      <div data-role="fieldcontain">
-        
+      <div data-role="fieldcontain">        
         <textarea name="description" id="description" placeholder="Description" rows="10"></textarea>
+      </div>
+      <div data-role="fieldcontain" class="ui-hide-label">
+        <input type="text" name="date" id="date" value="" placeholder="Task date"/>
       </div>
       <label for="active">Active?</label>
       <select name="active" id="active" data-role="slider">
@@ -80,7 +82,7 @@
       <a href="#" data-role="button" data-icon="gear" data-iconpos="right" data-theme="e">Take picture</a>
       </div>
             <div data-role="fieldcontain"> 
-      <a href="#" data-role="button" data-icon="check" data-iconpos="right" data-theme="a">Create Task</a>
+      <a href="javascript:void(0)" id="create" data-role="button" data-icon="check" data-iconpos="right" data-theme="a">Create Task</a>
       </div>
     </form>
     
