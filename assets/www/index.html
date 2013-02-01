@@ -23,20 +23,10 @@
     </h2>
   </div>
   <div data-role="content">
-    <ul data-role="listview" data-divider-theme="a" data-inset="true">
+    <ul id="taskList" data-role="listview" data-divider-theme="a" data-inset="true">
       <li data-role="list-divider" role="heading">
         My Tasks
-      </li>
-      <li data-theme="c">
-        <a href="#page2" data-transition="slide">
-          Task 1
-        </a>
-      </li>
-      <li data-theme="c">
-        <a href="#page2" data-transition="slide">
-          Task 2
-        </a>
-      </li>
+      </li>      
     </ul>
   </div>
   <div data-role="footer" data-position="fixed">    
@@ -44,7 +34,7 @@
       <ul>
         <li><a href="#listTasks" data-icon="grid">List Tasks</a></li>
         <li><a href="#newTask" data-icon="plus">New Task</a></li>
-        <li><a href="#"data-icon="info">About</a></li>
+        <li><a href="#"data-icon="info">Options</a></li>
       </ul>
     </div><!-- /navbar -->
   </div><!-- /footer -->
@@ -70,11 +60,6 @@
       <div data-role="fieldcontain" class="ui-hide-label">
         <input type="text" name="date" id="date" value="" placeholder="Task date"/>
       </div>
-      <label for="active">Active?</label>
-      <select name="active" id="active" data-role="slider">
-        <option value="off">No</option>
-        <option value="on">Yes</option>
-      </select> 
       <div data-role="fieldcontain"> 
       <a href="#" data-role="button" data-icon="gear" data-iconpos="right" data-theme="e">Take picture</a>
       </div>
@@ -89,7 +74,7 @@
       <ul>
         <li><a href="#listTasks" data-icon="grid">List Tasks</a></li>
         <li><a href="#newTask" data-icon="plus">New Task</a></li>
-        <li><a href="#"data-icon="info">About</a></li>
+        <li><a href="#"data-icon="info">Options</a></li>
       </ul>
     </div><!-- /navbar -->
   </div><!-- /footer -->
